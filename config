@@ -18,7 +18,12 @@ set $3 3:mail
 set $4 4:chat
 set $5 5:code
 set $6 6:music
-set $10 10:random
+set $7 7:
+set $8 8:
+set $9 9:random
+set $10 10:stats
+
+
 
 #assigns
 
@@ -27,6 +32,7 @@ assign [class="Thunderbird"] $3
 assign [class="psi"] $4
 assign [class="wicd-gtk"] $1
 assign [class="eclipse"] $5
+assign [class="Pidgin"] $4
 
 #behaviors
 focus_follows_mouse no
@@ -48,7 +54,8 @@ bindsym $mod+Shift+Q kill
 bindsym $mod+d exec dmenu_run
 
 #screen lock
-bindsym $mod+l exec slock
+bindsym $mod+u exec i3lock -u -c 000000
+bindsym $mod+l exec i3lock -u -i ~/Desktop/tmp/arch_wood.jpg -p default
 
 # change focus
 bindsym $mod+j focus left
@@ -171,20 +178,25 @@ bindsym Escape mode "default"
 
 bindsym $mod+r mode "resize"
 
-exec nitrogen --restore &
+
+#class border backgr.text indicator
+
+client.focused #16ff00 #000000 #ffffff #2e9ef4
+
+exec feh --bg-scale ~/Desktop/tmp/arch_wood.jpg 
 exec xcompmgr &
 exec psi
 exec thunderbird
+exec pidgin
 
 exec sudo rc.d start dbus
 exec sudo wicd-gtk
 #exec sudo rc.d start wicd
 #exec sudo wicd-client
 
-
-
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
-        status_command i3status
+
+     status_command i3status
 }
