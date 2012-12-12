@@ -181,7 +181,11 @@ bindsym $mod+r mode "resize"
 
 #class border backgr.text indicator
 
-client.focused #16ff00 #000000 #ffffff #2e9ef4
+client.focused #16ff00 #000000 #ffffff #2e9ef4 
+client.focused_inactive #333333 #5f676a #ffffff #484e50
+client.unfocused        #333333 #222222 #888888 #292d2e
+client.urgent           #2f343a #900000 #ffffff #900000
+
 
 exec feh --bg-scale ~/Desktop/tmp/arch_wood.jpg 
 exec xcompmgr &
@@ -189,14 +193,19 @@ exec psi
 exec thunderbird
 exec pidgin
 
-exec sudo rc.d start dbus
-exec sudo wicd-gtk
-#exec sudo rc.d start wicd
-#exec sudo wicd-client
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
+	colors{
+		
+        focused_workspace  #000000 #16FF00
+        active_workspace   #ffffff #333333
+        inactive_workspace #888888 #222222
+        urgent_workspace   #ffffff #900000
 
+	}
      status_command i3status
+
+
 }

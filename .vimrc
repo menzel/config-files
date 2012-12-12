@@ -14,5 +14,30 @@ set laststatus=2
 set scrolloff=8
 set number
 
+" 2 lines command line:
+set ch=2
+
+"visuals bell
+set vb 
+
+"highlighted search:
 set hlsearch
+
 syntax on
+
+"disable syntax on too long lines
+set synmaxcol=2048
+
+"hide mouse
+set mousehide
+
+set history=100
+
+"better command-line completion
+set wildmenu
+
+"fix spelling mistakes:
+
+iab ihc ich
+iab nihct nicht
+
