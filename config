@@ -138,6 +138,8 @@ bindsym $mod+Shift+R restart
 # exit i3 (logs you out of your X session)
 bindsym $mod+Shift+E exit
 
+
+bindsym $mod+Tab workspace next
 # resize window (you can also use the mouse for that)
 mode "resize" {
         # These bindings trigger as soon as you enter the resize mode
@@ -179,7 +181,7 @@ bindsym Escape mode "default"
 bindsym $mod+r mode "resize"
 
 
-#class border backgr.text indicator
+#class border backg.text indicator
 
 client.focused #16ff00 #000000 #ffffff #2e9ef4 
 client.focused_inactive #333333 #5f676a #ffffff #484e50
@@ -199,10 +201,10 @@ exec pidgin
 bar {
 	colors{
 		
-        focused_workspace  #000000 #16FF00
-        active_workspace   #ffffff #333333
-        inactive_workspace #888888 #222222
-        urgent_workspace   #ffffff #900000
+        focused_workspace  #16FF00 #16FF00 #000000 
+        active_workspace   #ffffff #333333 #000000
+        inactive_workspace #888888 #222222 
+        urgent_workspace   #ffffff #900000 #000000
 
 	}
      status_command i3status
