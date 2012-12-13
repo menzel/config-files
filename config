@@ -18,7 +18,7 @@ set $3 3:mail
 set $4 4:chat
 set $5 5:code
 set $6 6:music
-set $7 7:
+set $7 7:foo
 set $8 8:
 set $9 9:random
 set $10 10:stats
@@ -201,8 +201,8 @@ exec pidgin
 bar {
 	colors{
 		
-        focused_workspace  #16FF00 #16FF00 #000000 
-        active_workspace   #ffffff #333333 #000000
+        focused_workspace  #16FF00 #000000 #16FF00 
+        active_workspace   #000000 #333333 #000000
         inactive_workspace #888888 #222222 
         urgent_workspace   #ffffff #900000 #000000
 

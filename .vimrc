@@ -36,6 +36,38 @@ set history=100
 "better command-line completion
 set wildmenu
 
+"backspacing over indent, eol
+set backspace=2
+
+"let cursor move on char after eol 
+set virtualedit=onemore
+
+"always jump one char further with 0 and $
+:noremap 0 g0
+:noremap $ g$
+
+
+"create backup files~ in dir:
+set backupdir=~/.vim/backup
+set noswapfile
+
+"break only at space and tab
+set linebreak
+
+
+"disable arrow keys:
+noremap <UP> ""
+noremap! <UP> <ESC> 
+noremap <DOWN> ""
+noremap! <DOWN> <ESC> 
+noremap <LEFT> ""
+noremap! <LEFT> <ESC> 
+noremap <RIGHT> ""
+noremap! <RIGHT> <ESC> 
+
+noremap <DELETE> ""
+noremap! <DELETE> <ESC>
+
 "fix spelling mistakes:
 
 iab ihc ich
