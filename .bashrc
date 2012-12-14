@@ -29,6 +29,14 @@ alias powertop='sudo powertop'
 alias unlock='ecryptfs-mount-private'
 alias lock='ecryptfs-umount-private'
 alias R='R -q'
+alias bc='bc -l'
+#safety nets:
+alias rm='rm -I --preserve-root'
+alias mv='mv -i'
+alias mv='cp -i'
+alias chown='chown --preserve-root'
+alias chgrp='chgrp --preserve-root'
+alias chmod='chmod --preserve-root'
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
