@@ -48,8 +48,7 @@ set virtualedit=onemore
 
 
 "create backup files~ in dir:
-set backupdir=~/.vim/backup
-set noswapfile
+
 
 "break only at space and tab
 set linebreak
