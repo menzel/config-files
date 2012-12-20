@@ -31,9 +31,10 @@ alias lock='ecryptfs-umount-private'
 alias R='R -q'
 alias bc='bc -l'
 #safety nets:
-alias rm='rm -I --preserve-root'
+
+alias rm='rm --preserve-root'
 alias mv='mv -i'
-alias mv='cp -i'
+alias cp='cp -i'
 alias chown='chown --preserve-root'
 alias chgrp='chgrp --preserve-root'
 alias chmod='chmod --preserve-root'
