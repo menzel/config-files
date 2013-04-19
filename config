@@ -55,8 +55,8 @@ bindsym $mod+d exec dmenu_run
 
 #screen lock
 #bindsym $mod+u exec i3lock -u -c 000000
-bindsym $mod+b exec i3lock -u -i ~/Desktop/tmp/arch_wood.jpg -p default
-
+#bindsym $mod+b exec i3lock -u -i ~/Desktop/tmp/arch_wood.jpg -p default
+bindsym $mod+b exec i3lock -c 000000
 # change focus
 bindsym $mod+h focus left
 bindsym $mod+j focus down
@@ -70,10 +70,10 @@ bindsym $mod+l focus right
 #bindsym $mod+Right focus right
 
 # move focused window
-bindsym $mod+Shift+J move left
-bindsym $mod+Shift+K move down
-bindsym $mod+Shift+L move up
-bindsym $mod+Shift+colon move right
+bindsym $mod+Shift+H move left
+bindsym $mod+Shift+J move down
+bindsym $mod+Shift+k move up
+bindsym $mod+Shift+l move right
 
 # alternatively, you can use the cursor keys:
 #bindsym $mod+Shift+Left move left
@@ -82,7 +82,7 @@ bindsym $mod+Shift+colon move right
 #bindsym $mod+Shift+Right move right
 
 # split in horizontal orientation
-bindsym $mod+h split h
+bindsym $mod+n split h
 
 # split in vertical orientation
 bindsym $mod+v split v
@@ -189,7 +189,7 @@ client.unfocused        #333333 #222222 #888888 #292d2e
 client.urgent           #2f343a #900000 #ffffff #900000
 
 
-exec feh --bg-scale ~/Desktop/tmp/arch_wood.jpg 
+exec feh --bg-scale ~/Desktop/tmp/arch_linux_wallpaper_by_mokkujin-d3j1se0.png
 exec xcompmgr &
 exec psi
 exec thunderbird
@@ -199,6 +199,9 @@ exec pidgin
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
+	#font -misc-small-r-normal--13-120-75-75-C-70-iso10646-1
+	font -*-arial-medium-r-*-*-14-*-*-*-*-*-*-*
+
 	colors{
 		
         focused_workspace  #16FF00 #000000 #16FF00 
@@ -207,6 +210,7 @@ bar {
         urgent_workspace   #ffffff #900000 #000000
 
 	}
+
      status_command i3status
 
 
