@@ -5,11 +5,15 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
-[ -n "$WINDOWID" ] && transset-df -i $WINDOWID >/dev/null
 
 PS1='[\u@\h \W]\$ '
 
+[ -n "$XTERM_VERSION" ] && transset-df -a >/dev/null
+
 export EDITOR="vim"
+
+xset -b
+
 
 #alias:
 alias minecraft='java -jar /home/menzel/games/minecraft.jar'
@@ -18,36 +22,42 @@ alias top='htop'
 alias irb='irb -r irb/completion'
 alias xterm='xterm -bg black -fg limegreen'
 alias shutdown='sudo shutdown -h now'
-alias pacman='sudo pacman'
 alias cpu='watch -t grep \"cpu MHz\" /proc/cpuinfo'
-alias coot='sh /usr/share/coot/coot-Linux-x86_64-debian-gnu-linux-wheezy-sid-gtk2-python/bin/coot'
-alias std='mupdf ~/Desktop/THM/mmnz21\ -\ Mein\ Stundenplan.pdf &'
-alias studium='cd ~/Desktop/THM/4.Semester/'
-alias als='alsamixer -g'
+alias std='z ~/Desktop/THM/mmnz21\ -\ Mein\ Stundenplan.pdf'
+alias studium='cd ~/Desktop/THM/5.Semester/'
 alias wl='wicd-gtk'
 alias powertop='sudo powertop'
 alias unlock='ecryptfs-mount-private'
 alias lock='ecryptfs-umount-private'
 alias R='R -q'
 alias bc='bc -lq'
-cdl(){
-cd $1
-ls
-}
-cds(){
-cd $1
-ls
-}
+alias z='zathura'
+alias fork='xterm -bg black -fg white &'
+alias pse='feh -F ~/Desktop/tmp/pse.png'
+alias thunderbird='icedove'
+alias mensa='sh ~/mensa.sh'
+alias dolphin='dolphin . >/dev/null 2> /dev/null'
+alias okular='okular 2> /dev/null'
 
+set -o vi
 #safety nets: 
 alias rm='rm --preserve-root'
 alias mv='mv -i'
 alias cp='cp -i'
 alias chown='chown --preserve-root'
 alias chgrp='chgrp --preserve-root'
-alias chmod='chmod --preserve-root'
+alias chmod='chmod --preserve-root' 
 
+PLPLOT_LIB=/usr/lib/emboss
+PATH=/usr/lib/emboss:$PATH
+BLASTDB=/home/menzel/.emboss
+BLASTMAT=/home/menzel/.emboss
+export BLASTDB
+export BLASTDB
+export PLPLOT_LIB PATH
 
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
-
+export PERL_LOCAL_LIB_ROOT="/home/menzel/perl5:$PERL_LOCAL_LIB_ROOT";
+export PERL_MB_OPT="--install_base "/home/menzel/perl5"";
+export PERL_MM_OPT="INSTALL_BASE=/home/menzel/perl5";
+export PERL5LIB="/home/menzel/perl5/lib/perl5:$PERL5LIB";
+export PATH="/home/menzel/perl5/bin:$PATH";

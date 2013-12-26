@@ -1,3 +1,16 @@
+execute pathogen#infect()
+" clang_complete
+let g:clang_trailing_placeholder=1 
+let g:clang_complete_macros=1
+let g:clang_snippets=1
+
+let $VIMRUNTIME='/usr/share/vim/vim74' 
+
+filetype on
+
+au BufNewFile,BufRead *.cup set filetype=cup
+au BufNewFile,BufRead *.spl set filetype=spl
+
 set statusline=
 set statusline +=%1*\ %n\ %*            "buffer number
 set statusline +=%5*%{&ff}%*            "file format
@@ -22,6 +35,7 @@ set vb
 
 "highlighted search:
 set hlsearch
+set incsearch
 
 syntax on
 
@@ -53,6 +67,8 @@ set virtualedit=onemore
 "break only at space and tab
 set linebreak
 
+set smartindent
+
 
 "disable arrow keys:
 noremap <UP> ""
@@ -71,4 +87,5 @@ noremap! <DELETE> <ESC>
 
 iab ihc ich
 iab nihct nicht
+iab syso System.out.println(
 
