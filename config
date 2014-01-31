@@ -10,6 +10,7 @@
 # Please see http://i3wm.org/docs/userguide.html for a complete reference!
 
 set $mod Mod4
+set $other Mod1
 
 #screen names
 set $1 1:main
@@ -17,22 +18,31 @@ set $2 2:www
 set $3 3:mail
 set $4 4:chat
 set $5 5:eclipse
-set $6 6:CB
+set $6 6:SWTP
 set $7 7:KSP
 set $8 8:LiMo
 set $9 9:books
 set $10 10:Go
+
+set $11 11:
+set $12 12:
+set $13 13:
+set $14 14:
+set $15 15:
 
 #assigns
 
 assign [class="Firefox"] $2
 assign [class="Icedove"] $3
 assign [class="Pidgin"] $4
+assign [class="Finch"] $4
 assign [class="Eclipse"] $5
 
 #behaviors
 focus_follows_mouse no
 popup_during_fullscreen ignore
+
+
 
 # font for window titles. ISO 10646 = Unicode
 font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
@@ -118,6 +128,13 @@ bindsym $mod+8 workspace $8
 bindsym $mod+9 workspace $9
 bindsym $mod+0 workspace $10
 
+bindsym $other+1 workspace $11
+bindsym $other+2 workspace $12
+bindsym $other+3 workspace $13
+bindsym $other+4 workspace $14
+bindsym $other+5 workspace $15
+
+
 # move focused container to workspace
 bindsym $mod+Shift+exclam move workspace $1
 bindsym $mod+Shift+at move workspace $2
@@ -129,6 +146,12 @@ bindsym $mod+Shift+ampersand move workspace $7
 bindsym $mod+Shift+asterisk move workspace $8
 bindsym $mod+Shift+parenleft move workspace $9
 bindsym $mod+Shift+parenright move workspace $10
+
+bindsym $other+Shift+exclam move workspace $11
+bindsym $other+Shift+at move workspace $12
+bindsym $other+Shift+numbersign move workspace $13
+bindsym $other+Shift+dollar move workspace $14
+bindsym $other+Shift+percent move workspace $15
 
 # reload the configuration file
 bindsym $mod+Shift+C reload
@@ -194,7 +217,9 @@ exec xcompmgr &
 exec icedove
 exec firefox
 exec pidgin
+#exec finch
 exec wicd-gtk --tray &
+exec nm-applet &
 
 
 # Start i3bar to display a workspace bar (plus the system information i3status

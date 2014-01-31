@@ -8,6 +8,7 @@
 
 PS1='[\u@\h \W]\$ '
 
+
 [ -n "$XTERM_VERSION" ] && transset-df -a >/dev/null
 
 export EDITOR="vim"
@@ -16,6 +17,7 @@ xset -b
 
 
 #alias:
+
 alias minecraft='java -jar /home/menzel/games/minecraft.jar'
 alias ls='ls --color=auto'
 alias top='htop'
@@ -38,6 +40,8 @@ alias thunderbird='icedove'
 alias mensa='sh ~/mensa.sh'
 alias dolphin='dolphin . >/dev/null 2> /dev/null'
 alias okular='okular 2> /dev/null'
+alias idea='/usr/lib/idea-IC-133.331/bin/./idea.sh'
+alias hist='tig'
 
 set -o vi
 #safety nets: 
@@ -61,3 +65,8 @@ export PERL_MB_OPT="--install_base "/home/menzel/perl5"";
 export PERL_MM_OPT="INSTALL_BASE=/home/menzel/perl5";
 export PERL5LIB="/home/menzel/perl5/lib/perl5:$PERL5LIB";
 export PATH="/home/menzel/perl5/bin:$PATH";
+
+
+#printf "[menzel@serenity menzel]$ "
+#sleep 4  
+#exit 1
