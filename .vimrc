@@ -1,9 +1,3 @@
-execute pathogen#infect()
-" clang_complete
-let g:clang_trailing_placeholder=1 
-let g:clang_complete_macros=1
-let g:clang_snippets=1
-
 let $VIMRUNTIME='/usr/share/vim/vim74' 
 
 filetype on

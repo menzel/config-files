@@ -20,28 +20,21 @@ xset -b
 
 alias minecraft='java -jar /home/menzel/games/minecraft.jar'
 alias ls='ls --color=auto'
-alias top='htop'
-alias irb='irb -r irb/completion'
 alias xterm='xterm -bg black -fg limegreen'
 alias shutdown='sudo shutdown -h now'
 alias cpu='watch -t grep \"cpu MHz\" /proc/cpuinfo'
 alias std='z ~/Desktop/THM/mmnz21\ -\ Mein\ Stundenplan.pdf'
-alias studium='cd ~/Desktop/THM/5.Semester/'
+alias studium='cd ~/Desktop/JLU/1.Sem/'
 alias wl='wicd-gtk'
 alias powertop='sudo powertop'
-alias unlock='ecryptfs-mount-private'
-alias lock='ecryptfs-umount-private'
 alias R='R -q'
 alias bc='bc -lq'
 alias z='zathura'
 alias fork='xterm -bg black -fg white &'
-alias pse='feh -F ~/Desktop/tmp/pse.png'
-alias thunderbird='icedove'
-alias mensa='sh ~/mensa.sh'
-alias dolphin='dolphin . >/dev/null 2> /dev/null'
-alias okular='okular 2> /dev/null'
-alias idea='/usr/lib/idea-IC-133.331/bin/./idea.sh'
-alias hist='tig'
+alias mensa='sh ~/skripte/mensa.sh'
+alias idea='/usr/share/idea-IC-139.659.2/bin/idea.sh'
+
+alias make='clear && make'
 
 set -o vi
 #safety nets: 
@@ -70,3 +63,6 @@ export PATH="/home/menzel/perl5/bin:$PATH";
 #printf "[menzel@serenity menzel]$ "
 #sleep 4  
 #exit 1
+
+PATH=$PATH:$HOME//.rvm/bin # Add RVM to PATH for scripting
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
