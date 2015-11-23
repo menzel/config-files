@@ -17,12 +17,12 @@ set $1 1:main
 set $2 2:www
 set $3 3:mail
 set $4 4:chat
-set $5 5:eclipse
-set $6 6:ruby
-set $7 7:
-set $8 8:
-set $9 9:
-set $10 10:Go
+set $5 5:java
+set $6 6:hiwi
+set $7 7:neug
+set $8 8:music
+set $9 9:foo
+set $10 10:bar
 
 set $11 11:
 set $12 12:
@@ -51,8 +51,8 @@ font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
 floating_modifier $mod
 
 # start a terminal
-#bindsym $mod+Return exec /usr/bin/xterm -bg black -fg limegreen
-bindsym $mod+Return exec /usr/bin/xterm -bg black -fg white
+bindsym $mod+Return exec /usr/bin/xterm -bg black -fg limegreen
+#bindsym $mod+Return exec /usr/bin/xterm -bg black -fg white
 
 # kill focused window
 bindsym $mod+Shift+Q kill
@@ -200,6 +200,10 @@ bindsym Escape mode "default"
 }
 
 bindsym $mod+r mode "resize"
+
+bindsym $mod+Shift+bracketleft move workspace to output left
+bindsym $mod+Shift+bracketright move workspace to output right
+
 
 
 #class border backg.text indicator

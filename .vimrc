@@ -33,6 +33,10 @@ set incsearch
 
 syntax on
 
+set bg=dark
+
+set cursorline
+
 "disable syntax on too long lines
 set synmaxcol=2048
 
