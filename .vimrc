@@ -27,6 +27,8 @@ set ch=2
 "visuals bell
 set vb 
 
+set noswapfile
+
 "highlighted search:
 set hlsearch
 set incsearch

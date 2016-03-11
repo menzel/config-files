@@ -17,9 +17,9 @@ set $1 1:main
 set $2 2:www
 set $3 3:mail
 set $4 4:chat
-set $5 5:java
-set $6 6:hiwi
-set $7 7:neug
+set $5 5:lfba
+set $6 6:lfba
+set $7 7:swtp
 set $8 8:music
 set $9 9:foo
 set $10 10:bar

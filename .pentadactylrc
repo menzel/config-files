@@ -1,0 +1,10 @@
+"hg7127
+
+loadplugins '\.(js|penta)$'
+group user
+set defsearch=duckduckgo-de
+
+" vim: set ft=pentadactyl:
+
+map <C-d> <PageDown>
+map <C-u> <PageUp>

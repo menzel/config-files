@@ -26,12 +26,12 @@ alias cpu='watch -t grep \"cpu MHz\" /proc/cpuinfo'
 alias R='R -q'
 alias bc='bc -lq'
 alias z='zathura'
-alias fork='xterm -bg black -fg limegreen &'
+alias fork='xterm /bin/bash -bg black -fg limegreen &'
 alias idea='/usr/share/idea-IU/bin/idea.sh'
 
 alias make='clear && make'
 
-alias studium='cd ~/Desktop/JLU/3.Sem/'
+alias studium='cd ~/Desktop/JLU/4.Sem/'
 alias lfba='cd ~/Desktop/THM/lfba/'
 alias heart='cd ~/IdeaProjects/SiliconHeart_RPI/out/artifacts'
 
