@@ -19,23 +19,36 @@ stty erase ^H
 
 #alias:
 
-alias ls='ls --color=auto'
+alias ls='ls --color=always'
 alias xterm='xterm -bg black -fg limegreen'
 #alias shutdown='sudo shutdown -h now'
 alias cpu='watch -t grep \"cpu MHz\" /proc/cpuinfo'
 alias R='R -q'
 alias bc='bc -lq'
 alias z='zathura'
+
 alias fork='xterm /bin/bash -bg black -fg limegreen &'
+
+alias show='xterm -fg Black -bg Lightgray -fn 7x13 -fa "Source Code Pro:size=16" &'
+alias key-mon='key-mon -l --nomouse --old-keys=5'
+
+
 alias idea='/usr/share/idea-IU/bin/idea.sh'
 
 alias make='clear && make'
 
 alias studium='cd ~/Desktop/JLU/4.Sem/'
 alias lfba='cd ~/Desktop/THM/lfba/'
+alias swtp='cd ~/Desktop/THM/lfba/swtp/2016'
 alias heart='cd ~/IdeaProjects/SiliconHeart_RPI/out/artifacts'
 
 #set -o vi
+
+
+# ssh:
+alias enhort='ssh mmnz21@enhort.mni.thm.de'
+alias ladon='ssh mmnz21@bioinf-ladon.mni.thm.de'
+
 
 
 #safety nets: 
@@ -64,6 +77,9 @@ export PERL5LIB="/home/menzel/perl5/lib/perl5:$PERL5LIB";
 export PATH="/home/menzel/perl5/bin:$PATH";
 export JAVA_HOME="/usr/lib/jvm/java-8-openjdk/"
 export PATH=$JAVA_HOME/bin:$PATH
+
+
+#LS_COLORS=$LS_COLORS:'fi=0;92:' ; export LS_COLORS
 
 
 #printf "[menzel@serenity menzel]$ "
