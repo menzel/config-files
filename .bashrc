@@ -15,7 +15,7 @@ export EDITOR="vim"
 
 xset -b
 
-stty erase ^H
+stty erase ''
 
 #alias:
 
@@ -27,13 +27,13 @@ alias R='R -q'
 alias bc='bc -lq'
 alias z='zathura'
 
-alias fork='xterm /bin/bash -bg black -fg limegreen &'
+alias fork='urxvt &'
 
 alias show='xterm -fg Black -bg Lightgray -fn 7x13 -fa "Source Code Pro:size=16" &'
 alias key-mon='key-mon -l --nomouse --old-keys=5'
 
 
-alias idea='/usr/share/idea-IU/bin/idea.sh'
+alias idea='/opt//idea-IU/bin/idea.sh'
 
 alias make='clear && make'
 
@@ -79,16 +79,5 @@ export JAVA_HOME="/usr/lib/jvm/java-8-openjdk/"
 export PATH=$JAVA_HOME/bin:$PATH
 
 
-#LS_COLORS=$LS_COLORS:'fi=0;92:' ; export LS_COLORS
 
-
-#printf "[menzel@serenity menzel]$ "
-#sleep 4  
-#exit 1
-
-PATH=$PATH:$HOME//.rvm/bin # Add RVM to PATH for scripting
-PATH=$PATH:$HOME//.gem/ruby/2.2.0/bin # Add RVM to PATH for scripting
-[[ -s "/usr/local/rvm/scripts/rvm" ]] && source "/usr/local/rvm/scripts/rvm"
-
-#THIS MUST BE AT THE END OF THE FILE FOR GVM TO WORK!!!
-[[ -s "/home/menzel/.gvm/bin/gvm-init.sh" ]] && source "/home/menzel/.gvm/bin/gvm-init.sh"
+LS_COLORS=$LS_COLORS:'di=1;30;43:' ; export LS_COLORS 
