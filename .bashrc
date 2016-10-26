@@ -25,7 +25,8 @@ alias xterm='xterm -bg black -fg limegreen'
 alias cpu='watch -t grep \"cpu MHz\" /proc/cpuinfo'
 alias R='R -q'
 alias bc='bc -lq'
-alias z='zathura'
+alias z='zathura --fork'
+alias lock='i3lock -c 000000 && systemctl suspend'
 
 alias fork='urxvt &'
 
@@ -34,12 +35,14 @@ alias key-mon='key-mon -l --nomouse --old-keys=5'
 
 
 alias idea='/opt//idea-IU/bin/idea.sh'
+alias pycharm='/opt/pycharm/bin/pycharm.sh'
 
 alias make='clear && make'
+alias lm='latexmk -xelatex'
 
 alias studium='cd ~/Desktop/JLU/4.Sem/'
 alias lfba='cd ~/Desktop/THM/lfba/'
-alias swtp='cd ~/Desktop/THM/lfba/swtp/2016'
+alias swtp='cd ~/Desktop/THM/lfba/swtp/ws2016'
 alias heart='cd ~/IdeaProjects/SiliconHeart_RPI/out/artifacts'
 
 #set -o vi
