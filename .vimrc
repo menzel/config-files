@@ -1,4 +1,4 @@
-let $VIMRUNTIME='/usr/share/vim/vim80' 
+let $VIMRUNTIME='/usr/share/vim/vim80'
 
 filetype on
 
@@ -28,6 +28,9 @@ set ch=2
 set vb 
 
 set noswapfile
+
+
+set tabstop=8 softtabstop=0 expandtab shiftwidth=4 smarttab
 
 "highlighted search:
 set hlsearch
@@ -99,4 +102,35 @@ endif
 iab ihc ich
 iab nihct nicht
 iab syso System.out.println(
+
+call plug#begin('~/.vim/plugged')
+
+" Make sure you use single quotes
+ Plug 'junegunn/seoul256.vim'
+ Plug 'junegunn/vim-easy-align'
+
+" Group dependencies, vim-snippets depends on ultisnips
+ Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets'
+
+" On-demand loading
+ Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
+ Plug 'tpope/vim-fireplace', { 'for': 'clojure' }
+
+" Using git URL
+ Plug 'https://github.com/junegunn/vim-github-dashboard.git'
+
+" Plugin options
+ Plug 'nsf/gocode', { 'tag': 'v.20150303', 'rtp': 'vim' }
+
+" Plugin outside ~/.vim/plugged with post-update hook
+ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': 'yes \| ./install' }
+
+" Unmanaged plugin (manually installed and updated)
+ Plug '~/my-prototype-plugin'
+
+ Plug 'lervag/vimtex'
+
+call plug#end()
+
+let g:vimtex_compiler_latexmk = {'callback' : 0}
 

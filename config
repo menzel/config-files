@@ -61,7 +61,6 @@ bindsym $mod+Shift+Q kill
 bindsym $mod+d exec dmenu_run
 
 #screen lock
-#bindsym $mod+u exec i3lock  -c 000000 
 bindsym $mod+u exec i3lock -t -i /home/menzel/Desktop/keep/MQG4N0g.png
 #bindsym $mod+b exec i3lock -c 000000
 
@@ -230,8 +229,9 @@ exec nm-applet
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
-	#font -misc-small-r-normal--13-120-75-75-C-70-iso10646-1
-	font -*-arial-medium-r-*-*-18-*-*-*-*-*-*-*
+	font -misc-small-r-normal--13-120-75-75-C-70-iso10646-1
+        #font pango:SourceCodePro 10
+        #font pango:DejaVu Sans Mono 9
 
 	colors{
 		
