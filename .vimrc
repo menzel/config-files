@@ -1,4 +1,4 @@
-let $VIMRUNTIME='/usr/share/vim/vim80'
+let $VIMRUNTIME='/usr/share/vim/vim81'
 
 filetype on
 

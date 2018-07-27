@@ -5,6 +5,9 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
+source /usr/local/etc/advanced-shell-history/config
+export ASH_CFG_SYSTEM_QUERY_FILE
+source /usr/local/lib/advanced_shell_history/sh/bash
 
 PS1='[\u@\h \W]\$ '
 
@@ -45,24 +48,31 @@ alias lm='latexmk -xelatex'
 
 alias studium='cd ~/Desktop/JLU/4.Sem/'
 alias hg19='cd /home/menzel/Desktop/THM/promotion/enhort/dat/hg19'
-alias hg19='cd /home/menzel/Desktop/THM/promotion/enhort/dat/hg19'
 
 alias prom='cd ~/Desktop/THM/promotion/'
 alias nopeak='cd ~/Desktop/THM/promotion/projekte/peakcalling'
 
 alias lfba='cd ~/Desktop/THM/lfba/'
-alias swtp='cd ~/Desktop/THM/lfba/swtp/ws2016'
-alias heart='cd ~/IdeaProjects/SiliconHeart_RPI/out/artifacts'
 
-alias maps='chromium maps.google.de'
+alias last='ls -t | head -1'
+alias zl='zathura --fork `last`'
+
+alias hist='ash_query.py -q RCWD'
+
+alias lpr='lpr -P Anderer_Drucker'
+
+alias telegram='/opt/Telegram/Telegram'
 
 #set -o vi
 
 
 # ssh:
-alias enhort='ssh mmnz21@enhort.mni.thm.de'
-alias ladon='ssh mmnz21@bioinf-ladon.mni.thm.de'
-alias hydra='ssh mmnz21@bioinf-hydra.mni.thm.de'
+alias enhort='ssh enhort'
+alias ladon='ssh ladon'
+alias hydra='ssh hydra'
+alias medusa='ssh mmnz21@bioinf-medusa.mni.thm.de'
+alias kobis='ssh kobis'
+
 
 
 

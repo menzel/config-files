@@ -35,8 +35,6 @@ set $15 15:
 assign [class="Firefox"] $2
 assign [class="Thunderbird"] $3
 assign [class="Pidgin"] $4
-assign [class="Finch"] $4
-assign [class="Eclipse"] $5
 
 #behaviors
 focus_follows_mouse no
@@ -213,15 +211,11 @@ client.unfocused        #333333 #222222 #888888 #292d2e
 client.urgent           #2f343a #900000 #ffffff #900000
 
 
-#exec feh --bg-scale ~/Desktop/tmp/arch_linux_wallpaper_by_mokkujin-d3j1se0.png
-#exec feh --bg-scale ~/bg/dark_circles.jpg
 exec feh --bg-scale ~/bg/1416093528025.jpg
 exec xcompmgr &
 exec thunderbird
 exec firefox
 exec pidgin -f
-#exec finch
-#exec wicd-gtk --tray &
 exec nm-applet
 
 
