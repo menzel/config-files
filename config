@@ -59,7 +59,7 @@ bindsym $mod+Shift+Q kill
 bindsym $mod+d exec dmenu_run
 
 #screen lock
-bindsym $mod+u exec i3lock -t -i /home/menzel/Desktop/keep/MQG4N0g.png
+bindsym $mod+u exec i3lock -t -i /home/menzel/Desktop/keep/clouds2.png
 #bindsym $mod+b exec i3lock -c 000000
 
 # change focus

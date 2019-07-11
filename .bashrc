@@ -34,10 +34,11 @@ alias bc='bc -lq'
 alias z='zathura --fork'
 alias lock='sudo /usr/bin/systemctl suspend --no-ask-password && i3lock'
 
+
 alias fork='urxvt &'
 
 alias show='xterm -fg Black -bg Lightgray -fn 7x13 -fa "Source Code Pro:size=16" &'
-alias key-mon='key-mon -l --nomouse --old-keys=5'
+#alias key-mon='key-mon -l --nomouse --old-keys=5'
 
 
 alias idea='/opt/idea-IU/bin/idea.sh'
@@ -46,7 +47,7 @@ alias pycharm='/opt/pycharm/bin/pycharm.sh'
 alias make='clear && make'
 alias lm='latexmk -xelatex'
 
-alias studium='cd ~/Desktop/JLU/4.Sem/'
+#alias studium='cd ~/Desktop/JLU/4.Sem/'
 alias hg19='cd /home/menzel/Desktop/THM/promotion/enhort/dat/hg19'
 
 alias prom='cd ~/Desktop/THM/promotion/'
@@ -90,4 +91,4 @@ export PATH=$JAVA_HOME/bin:$PATH
 
 LS_COLORS=$LS_COLORS:'di=1;30;43:' ; export LS_COLORS 
 
-[ -f ~/.fzf.bash ] && source ~/.fzf.bash
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash 
